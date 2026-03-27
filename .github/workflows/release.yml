@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
     inputs:
       version_name:
-        description: "Version name, e.g. 0.85"
+        description: "9999+sympatch"
         required: true
         type: string
       version_code:
-        description: "Version code, e.g. 85"
+        description: "9999+sympatch"
         required: true
         type: string
       create_github_release:
         description: "Create a GitHub release and attach the APK"
         required: true
-        default: false
+        default: true
         type: boolean
       build_fdroid_artifact:
         description: "Also build the unsigned F-Droid APK artifact"
